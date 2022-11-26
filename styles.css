@@ -255,6 +255,7 @@ section:last-child {
 .teachers-text {
 	max-width: 75ch;
 	padding-block: 2rem;
+	margin-inline: auto;
 }
 
 .video-container {
@@ -269,7 +270,7 @@ section:last-child {
 }
 
 .list-wrapper {
-	width: 50%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 }
@@ -289,8 +290,14 @@ section:last-child {
 	margin-top: 3rem;
 }
 
-.description-section .content-text {
+.content-text-wrapper {
+	width: 90%;
+    margin-inline: auto;
+}
+
+.content-text {
 	max-width: 385px;
+	margin-right: auto;
 }
 /* Why dance? section */
 .advantages-section h2 {
@@ -316,10 +323,6 @@ section:last-child {
 	margin-top: 3rem;
 }
 
-.cta .content-text {
-	max-width: 385px;
-	margin-top: 3rem;
-}
 .cta .phone-wrapper > span {
 	background-image: url('./assets/icons_svg/wup_icon_dark.svg');
 }
@@ -351,8 +354,17 @@ footer {
 .social-links span:nth-child(2) {
 	background-image: url('./assets/icons_svg/wup_icon_white.svg');	
 }
+.content-top,
+.content-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-
+.content-bottom {
+	/*display: flex;
+	flex-direction: row-reverse;*/
+}
 
 /* Media queries */
 @media (min-width: 746px) {
@@ -417,6 +429,20 @@ footer {
 
 	.description-section h2 {
 		text-align: center;
+	}
+
+	.content-top,
+	.content-bottom {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.img-left {
+		flex-direction: row-reverse;
+	}
+
+	.content-text-wrapper {
+		width: 50%;
 	}
 
 	.description-section .content-top {
