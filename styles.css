@@ -114,7 +114,8 @@ section:last-child {
 }
 
 /* Utility classes */
-.wrapper {
+.wrapper,
+.video-container {
 	width: 90%;
 	max-width: 1200px;
 	margin-inline: auto;
@@ -135,6 +136,7 @@ section:last-child {
 	width: 100%;
 	position: absolute;
 	top: 40px;
+	z-index: 1;
 }
 
 .contacts {
@@ -171,9 +173,24 @@ section:last-child {
 
 /* Hero section */
 .hero-section {
-	background-image: url('./assets/ballroom_dance_lessons/hero_bg_768.png');
+	background-image: url('./assets/ballroom_dance_lessons/hero_bg_1920.png');
 	background-size: cover;
 	background-position: center;
+	position: relative;
+	padding-bottom: 5rem;
+}
+
+.hero-section:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 134%;
+	background-image: url('./assets/ballroom_dance_lessons/wave.svg');
+    background-size: cover;
+	background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .main-title {
@@ -225,6 +242,7 @@ section:last-child {
 	display: block;
 	width: 100%;
     text-align: right;
+    margin-top: 4rem;
 }
 
 /* Dance teachers section */
@@ -250,6 +268,20 @@ section:last-child {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 1rem;
+	position: relative;
+}
+
+.image-wrapper:before {
+	content: '';
+	position: absolute;
+	top: -45px;
+	left: 0;
+	background-image: url('./assets/ballroom_dance_lessons/teachers_lines.svg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 101%;
+	z-index: -1;
 }
 
 .teachers-text {
@@ -258,8 +290,23 @@ section:last-child {
 	margin-inline: auto;
 }
 
-.video-container {
-	padding-bottom: 8rem;
+.video-container-wrapper {
+	position: relative;
+}
+
+.video-container-wrapper::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background-image: url('./assets/ballroom_dance_lessons/video_lines.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
 /* We can teach section */
@@ -270,7 +317,7 @@ section:last-child {
 }
 
 .list-wrapper {
-	width: 40%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
@@ -296,8 +343,8 @@ section:last-child {
 }
 
 .content-text {
-	max-width: 385px;
-	margin-right: auto;
+	width: 100%;
+	margin-inline: auto;
 }
 /* Why dance? section */
 .advantages-section h2 {
@@ -361,16 +408,10 @@ footer {
 	align-items: center;
 }
 
-.content-bottom {
-	/*display: flex;
-	flex-direction: row-reverse;*/
-}
-
 /* Media queries */
 @media (min-width: 746px) {
 	:root {
 		--fs-600: 4.5rem;
-		--fs-400: 1.8rem;
 	}
 
 	.contacts {
@@ -418,10 +459,6 @@ footer {
 		padding-block: 4rem;
 	}
 
-	.video-container {
-		padding-bottom: 18rem;
-	}
-
 	.styles-list {
 		padding-block: 12rem;
 		font-size: 2.5rem;
@@ -441,12 +478,16 @@ footer {
 		flex-direction: row-reverse;
 	}
 
+	.description-section .content-top {
+		margin-top: 4rem;
+	}
+
 	.content-text-wrapper {
 		width: 50%;
 	}
 
-	.description-section .content-top {
-		margin-top: 4rem;
+	.content-text {
+		max-width: 320px;
 	}
 
 	.advantages-section h2 {
@@ -482,7 +523,8 @@ footer {
 		--fs-400: 2rem;
 	}
 
-	.wrapper {
+	.wrapper, 
+	.video-container {
 		width: 75%;
 	}
 
@@ -531,10 +573,6 @@ footer {
 		padding-block: 5rem;
 	}
 
-	.video-container {
-		padding-bottom: 32rem;
-	}
-
 	.styles-list {
 		padding-block: 25.6rem;
 		font-size: 4rem;
@@ -554,5 +592,11 @@ footer {
 
 	.cta .content-top {
 		margin-top: 4.6rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.hero-section {
+		height: 980px;
 	}
 }
