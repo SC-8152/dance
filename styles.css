@@ -357,7 +357,8 @@ section:last-child {
 	content: '';
 	position: absolute;
     top: -2px;
-    left: -1px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(-0.2deg);
     width: 101%;
 	height: 100%;
 	background-image: url('./assets/we_can_teach/wave_3_top.svg');
@@ -370,8 +371,9 @@ section:last-child {
 	content: '';
 	position: absolute;
 	top: 1px;
-    left: -4px;
-    width: 100.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 101%;
 	height: 100%;
 	background-image: url('./assets/we_can_teach/wave_3_bottom.svg');
     background-size: contain;
@@ -669,13 +671,13 @@ footer {
 		padding-block: 4rem;
 	}
 
-	.styles-bg::after {
-    	top: -3px;
-	}
-
 	.styles-list {
 		padding-block: 12rem;
 		font-size: 2.5rem;
+	}
+
+	.styles-bg::after {
+		top: -4px;
 	}
 
 	.description-section {
@@ -779,10 +781,6 @@ footer {
 @media (min-width: 960px) {
 	:root {
 		--fs-900: 10rem;
-	}
-
-	.styles-bg::after {
-    	top: -7px;
 	}
 
 	.styles-list {
@@ -909,6 +907,12 @@ footer {
 	.cta-contacts .phone,
 	.cta-contacts > span {
 		font-size: 3.5rem;
+	}
+}
+
+@media (min-width: 1500px) {
+	.hero-section {
+		padding-bottom: 12rem;
 	}
 }
 
