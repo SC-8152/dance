@@ -550,7 +550,7 @@ section:last-child {
 	margin-top: 4rem;
 }
 
-.cta .phone-wrapper>span {
+.cta .phone-wrapper>a {
 	background-image: url('./assets/icons_svg/wup_icon_dark.svg');
 }
 
