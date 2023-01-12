@@ -42,9 +42,9 @@ ul {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  height: auto;
-  display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -52,7 +52,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 video {
@@ -67,23 +67,24 @@ video {
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
 /* Set up default root font size */
 html {
-	font-size: 62.5%; /* 10px */
+	font-size: 62.5%;
+	/* 10px */
 }
 
 /* Set up the body */
@@ -150,20 +151,20 @@ section:last-child {
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
-	background-size: 60%;	
+	background-size: 60%;
 	background-position: center;
 }
 
-.contacts > span {
+.contacts>span {
 	background-image: url('./assets/icons_svg/ig_icon.svg');
 }
 
-.phone-wrapper { 
-    display: flex;
-    align-items: center;
+.phone-wrapper {
+	display: flex;
+	align-items: center;
 }
 
-.phone-wrapper > span {
+.phone-wrapper>a {
 	background-image: url('./assets/icons_svg/wup_icon.svg');
 }
 
@@ -189,16 +190,16 @@ section:last-child {
 	width: 100%;
 	height: 134%;
 	background-image: url('./assets/ballroom_dance_lessons/wave.svg');
-    background-size: cover;
+	background-size: cover;
 	background-position: center bottom;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .main-title {
 	width: fit-content;
-    font-size: var(--fs-900);
-    line-height: .8;
-    position: relative;
+	font-size: var(--fs-900);
+	line-height: .8;
+	position: relative;
 }
 
 .main-title::before {
@@ -225,15 +226,15 @@ section:last-child {
 }
 
 .features-list-wrapper {
-    display: flex;
-    padding-block: 3rem;
-    padding-inline: 7rem;
-    background-color: rgba(255, 255, 255, .12);
-    max-width: 335px;
-    width: 100%;
-    margin-left: auto;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 20px;
+	display: flex;
+	padding-block: 3rem;
+	padding-inline: 7rem;
+	background-color: rgba(255, 255, 255, .12);
+	max-width: 335px;
+	width: 100%;
+	margin-left: auto;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 20px;
 }
 
 /* Dance teachers section */
@@ -242,12 +243,12 @@ section:last-child {
 }
 
 .teachers-names {
-    font-size: 3.5rem;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    max-width: 617px;
-    margin-inline: auto;
+	font-size: 3.5rem;
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	max-width: 617px;
+	margin-inline: auto;
 }
 
 .teachers-names span {
@@ -348,7 +349,7 @@ section:last-child {
 .styles-bg {
 	background-image: url('./assets/we_can_teach/dance_styles_bg.jpg');
 	background-size: cover;
-	background-position: center;	
+	background-position: center;
 	position: relative;
 	margin-bottom: 1px;
 }
@@ -356,29 +357,29 @@ section:last-child {
 .styles-bg::after {
 	content: '';
 	position: absolute;
-    top: -2px;
-    left: 50%;
-    transform: translateX(-50%) rotateZ(-0.2deg);
-    width: 101%;
+	top: -2px;
+	left: 50%;
+	transform: translateX(-50%) rotateZ(-0.2deg);
+	width: 101%;
 	height: 100%;
 	background-image: url('./assets/we_can_teach/wave_3_top.svg');
-    background-size: contain;
+	background-size: contain;
 	background-position: center top;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .styles-bg::before {
 	content: '';
 	position: absolute;
 	top: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 101%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 101%;
 	height: 100%;
 	background-image: url('./assets/we_can_teach/wave_3_bottom.svg');
-    background-size: contain;
+	background-size: contain;
 	background-position: center bottom;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .list-wrapper {
@@ -441,7 +442,7 @@ section:last-child {
 
 .content-text-wrapper {
 	width: 90%;
-    margin-inline: auto;
+	margin-inline: auto;
 }
 
 .content-text {
@@ -449,9 +450,10 @@ section:last-child {
 	margin-inline: auto;
 }
 
-.content-text > ul li:not(:first-child) {
+.content-text>ul li:not(:first-child) {
 	margin-top: 20px;
 }
+
 /* Why dance? section */
 .advantages-section {
 	overflow: hidden;
@@ -463,35 +465,35 @@ section:last-child {
 
 .advantages-bg {
 	background-image: url(./assets/why_dance/advantages_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 101%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 101%;
 }
 
 .advantages-bg::before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 100.5%;
-    height: 76px;
-    background-image: url(./assets/why_dance/bg_top.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100.5%;
+	height: 76px;
+	background-image: url(./assets/why_dance/bg_top.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .advantages-bg::after {
 	content: '';
 	position: absolute;
 	bottom: -2px;
-    left: -20px;
-    width: 100.5%;
+	left: -20px;
+	width: 100.5%;
 	height: 54px;
 	transform: rotate(180deg);
 	background-image: url('./assets/why_dance/bg_bottom.svg');
-	background-size: contain;	
- 	background-repeat: no-repeat;	
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .advantages-section .content {
@@ -512,16 +514,16 @@ section:last-child {
 
 .cta::before {
 	content: '';
-    position: absolute;
-    top: 0;
-    left: -2px;
-    width: 100.5%;
-    height: 100%;
-    background-image: url(./assets/lets_dance/wave_6.svg);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: -1;	
+	position: absolute;
+	top: 0;
+	left: -2px;
+	width: 100.5%;
+	height: 100%;
+	background-image: url(./assets/lets_dance/wave_6.svg);
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	z-index: -1;
 }
 
 .cta .content-text-wrapper {
@@ -548,19 +550,19 @@ section:last-child {
 	margin-top: 4rem;
 }
 
-.cta .phone-wrapper > span {
+.cta .phone-wrapper>span {
 	background-image: url('./assets/icons_svg/wup_icon_dark.svg');
 }
 
 /* Footer */
 footer {
-    background-color: var(--footer-bg-color);
+	background-color: var(--footer-bg-color);
 }
 
 .footer-content {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 	padding-block: 2rem;
 }
 
@@ -573,12 +575,13 @@ footer {
 }
 
 .social-links span:first-child {
-	background-image: url('./assets/icons_svg/ig_icon_white.svg');	
+	background-image: url('./assets/icons_svg/ig_icon_white.svg');
 }
 
 .social-links span:nth-child(2) {
-	background-image: url('./assets/icons_svg/wup_icon_white.svg');	
+	background-image: url('./assets/icons_svg/wup_icon_white.svg');
 }
+
 .content-top,
 .content-bottom {
 	display: flex;
@@ -590,14 +593,14 @@ footer {
 
 @media (min-width: 480px) {
 	.styles-list {
-		padding-block: 10.8rem;	
+		padding-block: 10.8rem;
 	}
 
 	.cta .wrapper {
-    	width: 95%;
+		width: 95%;
 		max-width: 1560px;
 		margin-right: 0;
-    	margin-left: auto;
+		margin-left: auto;
 	}
 
 	.cta .content-top {
@@ -622,7 +625,7 @@ footer {
 	}
 
 	.cta-contacts .phone,
-	.cta-contacts > span {
+	.cta-contacts>span {
 		font-size: 1.8rem;
 	}
 }
@@ -642,15 +645,15 @@ footer {
 		justify-content: flex-end;
 	}
 
-   	.teachers-section h2 {
-   		text-align: right;
-   	}
+	.teachers-section h2 {
+		text-align: right;
+	}
 
-   	.teachers-names {
+	.teachers-names {
 		font-size: 4.5rem;
 		margin-top: 2rem;
 		max-width: 590px;
-    	margin-inline: unset;
+		margin-inline: unset;
 	}
 
 	.image-wrapper {
@@ -667,7 +670,7 @@ footer {
 		border-bottom-left-radius: 0;
 	}
 
-   	.teachers-text {
+	.teachers-text {
 		padding-block: 4rem;
 	}
 
@@ -720,9 +723,9 @@ footer {
 
 	.advantages-bg {
 		background-image: url(./assets/why_dance/wave_5.svg), url(./assets/why_dance/advantages_bg.jpg);
-	    background-size: contain, cover;
-	    background-position: -6px 45%, center;
-	    background-repeat: no-repeat;
+		background-size: contain, cover;
+		background-position: -6px 45%, center;
+		background-repeat: no-repeat;
 	}
 
 	.advantages-section .content {
@@ -744,7 +747,7 @@ footer {
 	}
 
 	section:last-child {
-    	padding-bottom: 2.5rem;
+		padding-bottom: 2.5rem;
 	}
 
 	.cta .content-top {
@@ -752,7 +755,7 @@ footer {
 	}
 
 	.cta .content-text-wrapper {
-    	width: 47%;
+		width: 47%;
 	}
 
 	.cta .content-text {
@@ -760,21 +763,21 @@ footer {
 	}
 
 	.cta .content-img {
-    	width: unset;
+		width: unset;
 	}
 
 	.cta-contacts {
 		margin-top: 4.5rem;
 	}
 
-   	.footer-content {
-   		flex-direction: row;
-    	justify-content: center;
-   	}
+	.footer-content {
+		flex-direction: row;
+		justify-content: center;
+	}
 
-   	.footer-content > span {
-   		margin-inline: auto;
-   	}
+	.footer-content>span {
+		margin-inline: auto;
+	}
 }
 
 
@@ -804,7 +807,7 @@ footer {
 		--fs-400: 2rem;
 	}
 
-	.wrapper, 
+	.wrapper,
 	.video-container {
 		width: 75%;
 	}
@@ -827,14 +830,14 @@ footer {
 	}
 
 	.hero-content-top {
-   		height: 322px;
-   	}
+		height: 322px;
+	}
 
-   	.hero-content-top .features-list-wrapper {
+	.hero-content-top .features-list-wrapper {
 		max-width: 385px;
 	}
 
-   	.teahers-names {
+	.teahers-names {
 		margin-top: 4rem;
 	}
 
@@ -853,10 +856,10 @@ footer {
 	}
 
 	.content-text {
-    	max-width: 405px;
-    }
+		max-width: 405px;
+	}
 
-    .description-section {
+	.description-section {
 		padding-bottom: 16rem;
 	}
 
@@ -877,9 +880,9 @@ footer {
 	}
 
 	.advantages-section .content-text {
-        max-width: 490px;
-        margin-top: 15rem;
-    	padding-top: 6rem;
+		max-width: 490px;
+		margin-top: 15rem;
+		padding-top: 6rem;
 	}
 
 	.quote-text {
@@ -905,7 +908,7 @@ footer {
 	}
 
 	.cta-contacts .phone,
-	.cta-contacts > span {
+	.cta-contacts>span {
 		font-size: 3.5rem;
 	}
 }
@@ -932,8 +935,8 @@ footer {
 	}
 
 	.hero-content-top .features-list-wrapper {
-    	max-width: 565px;
-    	padding-block: 6rem;
+		max-width: 565px;
+		padding-block: 6rem;
 	}
 
 	.styles-list {
@@ -945,8 +948,8 @@ footer {
 	}
 
 	.advantages-bg::before {
-    	top: -2px;
-    }
+		top: -2px;
+	}
 
 	section:last-child {
 		padding-top: 10rem;
@@ -959,7 +962,7 @@ footer {
 
 @media(min-width: 1920px) {
 	.hero-content-top .features-list-wrapper {
-    	max-width: 640px;
+		max-width: 640px;
 	}
 
 	.cta .wrapper {
@@ -967,6 +970,6 @@ footer {
 	}
 
 	.cta .content-img {
-	    margin-bottom: 61px;
+		margin-bottom: 61px;
 	}
 }
