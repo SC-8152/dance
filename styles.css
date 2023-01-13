@@ -574,11 +574,11 @@ footer {
 	background-size: 90%;
 }
 
-.social-links span:first-child {
+/* .social-links span:first-child {
 	background-image: url('./assets/icons_svg/ig_icon_white.svg');
-}
+} */
 
-.social-links span:nth-child(2) {
+.social-links a:nth-child(2) {
 	background-image: url('./assets/icons_svg/wup_icon_white.svg');
 }
 
